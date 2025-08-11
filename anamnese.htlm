@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Anamnese - Ivana Figueroa Aesthetics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo-ivana.jpg" alt="Logo Ivana Figueroa Aesthetics">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre a Clínica</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="anamnese.html">Anamnese</a></li>
+                    <li><a href="agendamento.html">Agendamento</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="loja.html">Loja</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="anamnesis-form" class="content-section">
+            <div class="container">
+                <h2>Ficha de Anamnese Pós-operatória</h2>
+                <p>Preencha este formulário para que possamos entender melhor suas necessidades e planejar o tratamento mais adequado.</p>
+
+                <form action="#" method="POST">
+
+                    <fieldset>
+                        <legend>Dados Pessoais</legend>
+                        <div class="form-group">
+                            <label for="nome">Nome Completo:</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="form-group form-inline">
+                            <div>
+                                <label for="data_nasc">Data de Nascimento:</label>
+                                <input type="date" id="data_nasc" name="data_nasc">
+                            </div>
+                            <div>
+                                <label for="idade">Idade:</label>
+                                <input type="number" id="idade" name="idade">
+                            </div>
+                        </div>
+                        <div class="form-group form-inline">
+                            <div>
+                                <label for="estado_civil">Estado Civil:</label>
+                                <input type="text" id="estado_civil" name="estado_civil">
+                            </div>
+                            <div>
+                                <label for="profissao">Profissão:</label>
+                                <input type="text" id="profissao" name="profissao">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="endereco">Endereço:</label>
+                            <input type="text" id="endereco" name="endereco">
+                        </div>
+                        <div class="form-group form-inline">
+                            <div>
+                                <label for="bairro">Bairro:</label>
+                                <input type="text" id="bairro" name="bairro">
+                            </div>
+                            <div>
+                                <label for="cidade">Cidade:</label>
+                                <input type="text" id="cidade" name="cidade">
+                            </div>
+                        </div>
+                        <div class="form-group form-inline">
+                            <div>
+                                <label for="estado">Estado:</label>
+                                <input type="text" id="estado" name="estado">
+                            </div>
+                            <div>
+                                <label for="zip_code">CEP (Zip Code):</label>
+                                <input type="text" id="zip_code" name="zip_code" pattern="[0-9]{5}(-[0-9]{4})?" placeholder="##### ou #####-####">
+                            </div>
+                        </div>
+                        <div class="form-group form-inline">
+                            <div>
+                                <label for="tel_emergencia">Telefone de Emergência:</label>
+                                <input type="tel" id="tel_emergencia" name="tel_emergencia" pattern="^\(\d{3}\) \d{3}-\d{4}$" placeholder="(XXX) XXX-XXXX">
+                            </div>
+                            <div>
+                                <label for="num_filhos">Nº de Filhos:</label>
+                                <input type="number" id="num_filhos" name="num_filhos">
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Histórico de Saúde</legend>
+                        <div class="form-group form-inline">
+                            <label>Fumante:</label>
+                            <label class="radio-label"><input type="radio" name="fumante" value="sim">Sim</label>
+                            <label class="radio-label"><input type="radio" name="fumante" value="nao">Não</label>
+                            <label>Histórico de queloides:</label>
+                            <label class="radio-label"><input type="radio" name="queloides" value="sim">Sim</label>
+                            <label class="radio-label"><input type="radio" name="queloides" value="nao">Não</label>
+                        </div>
+                        <div class="form-group form-inline">
+                            <label>Histórico de alergia:</label>
+                            <label class="radio-label"><input type="radio" name="alergia" value="sim">Sim</label>
+                            <label class="radio-label"><input type="radio" name="alergia" value="nao">Não</label>
+                            <input type="text" name="alergia_local" placeholder="Local">
+                        </div>
+                        <div class="form-group form-inline">
+                            <label>Estado Emocional:</label>
+                            <label class="radio-label"><input type="radio" name="estado_emocional" value="calmo">Calmo</label>
+                            <label class="radio-label"><input type="radio" name="estado_emocional" value="ansioso">Ansioso</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="medicamentos">Medicamentos em uso:</label>
+                            <textarea id="medicamentos" name="medicamentos"></textarea>
+                        </div>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Cirurgia</legend>
+                        <div class="form-group">
+                            <label for="cirurgia_realizada">Cirurgia realizada:</label>
+                            <textarea id="cirurgia_realizada" name="cirurgia_realizada" rows="2" placeholder="Especificar áreas..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="cirurgia_responsavel">Cirurgião responsável:</label>
+                            <input type="text" id="cirurgia_responsavel" name="cirurgia_responsavel">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Quadro Clínico (Avaliação)</legend>
+                        <div class="form-group form-inline">
+                            <label>Edema:</label>
+                            <label class="radio-label"><input type="radio" name="edema" value="sim">Sim</label>
+                            <label class="radio-label"><input type="radio" name="edema" value="nao">Não</label>
+                            <input type="text" name="edema_regiao" placeholder="Região">
+                        </div>
+                        <div class="form-group form-inline">
+                            <label>Equimoses:</label>
+                            <label class="radio-label"><input type="radio" name="equimoses" value="sim">Sim</label>
+                            <label class="radio-label"><input type="radio" name="equimoses" value="nao">Não</label>
+                            <input type="text" name="equimoses_regiao" placeholder="Região">
+                        </div>
+                        <div class="form-group form-inline">
+                            <label>Necrose:</label>
+                            <label class="radio-label"><input type="radio" name="necrose" value="sim">Sim</label>
+                            <label class="radio-label"><input type="radio" name="necrose" value="nao">Não</label>
+                            <input type="text" name="necrose_regiao" placeholder="Região">
+                        </div>
+                        <div class="form-group form-inline">
+                            <label>Seroma:</label>
+                            <label class="radio-label"><input type="radio" name="seroma" value="sim">Sim</label>
+                            <label class="radio-label"><input type="radio" name="seroma" value="nao">Não</label>
+                            <input type="text" name="seroma_regiao" placeholder="Região">
+                        </div>
+                        <div class="form-group form-inline">
+                            <label>Saturação da pele:</label>
+                            <label class="radio-label"><input type="radio" name="saturacao_pele" value="sim">Sim</label>
+                            <label class="radio-label"><input type="radio" name="saturacao_pele" value="nao">Não</label>
+                            <input type="text" name="saturacao_regiao" placeholder="Região">
+                        </div>
+                        <div class="form-group form-inline">
+                            <label>Fibrose:</label>
+                            <label class="radio-label"><input type="radio" name="fibrose" value="sim">Sim</label>
+                            <label class="radio-label"><input type="radio" name="fibrose" value="nao">Não</label>
+                            <input type="text" name="fibrose_regiao" placeholder="Região">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Observações Adicionais</legend>
+                        <div class="form-group">
+                            <label for="observacoes">Observações:</label>
+                            <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Enviar Ficha</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <h3>Ivana Figueroa Aesthetics</h3>
+                <p>Estamos localizados em Alpharetta, Geórgia, EUA.</p>
+                <p>Endereço: 11539 Park Woods Circle building 202 Alpharetta GA 30004</p>
+                <p>Telefone: (470) 861-2419</p>
+                <p>Email: ivanafk69@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Ivana Figueroa Aesthetics. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
