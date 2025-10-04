@@ -2,17 +2,17 @@ name: Ping Supabase to Prevent Pausing
 
 on:
   schedule:
-    - cron: '0 9 * * 1,4' # Seg e Qui às 09:00 UTC. Mude se quiser diário ('0 9 * * *').
+    - cron: '0 9 * * 1,4'
   workflow_dispatch: {}
 
 jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Ping keep_alive via PostgREST
+      - name: Ping keep_alive via PostgREST (anon key)
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
         run: |
           response=$(curl -s -X GET "${SUPABASE_URL}/rest/v1/keep_alive?select=id&limit=1" \
             -H "apikey: ${SUPABASE_KEY}" \
