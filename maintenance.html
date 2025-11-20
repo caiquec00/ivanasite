@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção - Ivana Figueroa Aesthetics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .maintenance-container {
+            max-width: 600px;
+            width: 90%;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            padding: 48px 32px;
+            text-align: center;
+        }
+        .icon {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 24px;
+            background: #dcfce7;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .icon svg {
+            width: 48px;
+            height: 48px;
+            color: #16a34a;
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 16px;
+        }
+        .subtitle {
+            font-size: 1.25rem;
+            color: #4b5563;
+            margin-bottom: 8px;
+        }
+        .description {
+            font-size: 1rem;
+            color: #6b7280;
+            margin-bottom: 32px;
+        }
+        .info-box {
+            background: #f0fdf4;
+            border-left: 4px solid #16a34a;
+            padding: 24px;
+            margin-bottom: 32px;
+            text-align: left;
+            border-radius: 8px;
+        }
+        .info-box h2 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 12px;
+        }
+        .info-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .info-box li {
+            padding: 8px 0;
+            color: #374151;
+            display: flex;
+            align-items: start;
+        }
+        .info-box li span {
+            color: #16a34a;
+            margin-right: 8px;
+            font-weight: bold;
+        }
+        .contact-section {
+            border-top: 1px solid #e5e7eb;
+            padding-top: 32px;
+        }
+        .contact-section h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 16px;
+        }
+        .contact-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .btn {
+            display: block;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+            text-align: center;
+        }
+        .btn-primary {
+            background: #16a34a;
+            color: white;
+        }
+        .btn-primary:hover {
+            background: #15803d;
+        }
+        .btn-secondary {
+            background: #22c55e;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background: #16a34a;
+        }
+        .btn-tertiary {
+            background: #f3f4f6;
+            color: #1f2937;
+        }
+        .btn-tertiary:hover {
+            background: #e5e7eb;
+        }
+        .footer-text {
+            margin-top: 32px;
+            font-size: 0.875rem;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <div class="icon">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+        </div>
+        
+        <h1>Site em Manutenção</h1>
+        <p class="subtitle">Estamos melhorando nosso site para você!</p>
+        <p class="description">Voltaremos em breve com uma experiência ainda melhor.</p>
+
+        <div class="info-box">
+            <h2>O que estamos fazendo?</h2>
+            <ul>
+                <li><span>✓</span> Implementando melhorias de segurança e privacidade</li>
+                <li><span>✓</span> Atualizando políticas de privacidade e termos</li>
+                <li><span>✓</span> Melhorando a experiência do usuário</li>
+            </ul>
+        </div>
+
+        <div class="contact-section">
+            <h3>Precisa entrar em contato?</h3>
+            <div class="contact-buttons">
+                <a href="tel:+14048605088" class="btn btn-primary">
+                    📞 Ligar: (470) 861-2419
+                </a>
+                <a href="https://wa.me/14048605088?text=Olá%20Ivana" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    💬 WhatsApp
+                </a>
+                <a href="mailto:ivanafk69@gmail.com" class="btn btn-tertiary">
+                    ✉️ Email: ivanafk69@gmail.com
+                </a>
+            </div>
+        </div>
+
+        <p class="footer-text">Obrigado pela sua paciência! 🙏</p>
+    </div>
+</body>
+</html>
